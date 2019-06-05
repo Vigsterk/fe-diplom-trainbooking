@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Вся жизнь - путешествие!</title>
+  <link rel="stylesheet" href="../MainPage/MainPage.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="trainSelect_header">
+      <div class="top-menu">
+        <div class="top-menu_wrapper">
+          <a class="top-menu_logo" href="#">Лого</a>
+          <!--<img src="#" alt="logo">-->
+          <ul class="top-menu_nav-items">
+            <!-- BrowserRouter навигация -->
+            <li class="top-menu_nav-item">
+              <a href="#">О нас</a>
+            </li>
+            <li class="top-menu_nav-item">
+              <a href="#">Как это работает</a>
+            </li>
+            <li class="top-menu_nav-item">
+              <a href="#">Отзывы</a>
+            </li>
+            <li class="top-menu_nav-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="trainSelect_header-content">
+        <div class="trainSelect_header-content_search-form-container">
+          <form class="trainSelect_header-content_search-form">
+            <div class="search-form_first-block">
+              <h2 class="form_title">Направление</h2>
+              <input class="search-form_input from_search" placeholder="Откуда" />
+              <button class="reverse-points"></button>
+              <input class="search-form_input where_search" placeholder="Куда">
+            </div>
+
+            <div class="search-form_second-block">
+              <h2 class="form_title">Дата</h2>
+              <input type="date" class="search-form_input departure-date" placeholder="ДД/ММ/ГГ">
+              <input type="date" class="search-form_input departure-date-back" placeholder="ДД/ММ/ГГ">
+            </div>
+          </form>
+          <button class="find-tickets">Найти билеты</button>
+        </div>
+      </div>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumb breadcrumb-active"><a href="#"><span class="icon">1</span>Билеты</a></li>
+          <li class="breadcrumb"><a href="#"><span class="icon">2</span>Пассажиры</a></li>
+          <li class="breadcrumb"><a href="#"><span class="icon">3</span>Оплата</a></li>
+          <li class="breadcrumb"><a href="#"><span class="icon">4</span>Проверка</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main-container">
+      <section class="sidebar-content">
+        <section class="filters">
+          <div class="filters-container">
+            <div class="dateFilter">
+              <div class="dateFilter_departure">
+                <h2>Дата поездки</h2>
+                <input type="date" class="dateFilter_input filter_departure-date" placeholder="ДД/ММ/ГГ">
+              </div>
+              <div class="dateFilter_departure-back">
+                <h2>Дата возвращения</h2>
+                <input type="date" class="dateFilter_input filter_departure-date-back" placeholder="ДД/ММ/ГГ">
+              </div>
+            </div>
+            <div class="options">
+              <ul class="options-list">
+                <li>
+                  <span class="coupe-vector"></span>
+                  <p>Купе</p>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <span class="platzKarte-vector"></span>
+                  <p>Плацкарт</p>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <span class="seat-vector"></span>
+                  <p>Сидячий</p>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <span class="luxury-vector"></span>
+                  <p>Люкс</p>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <span class="wifi-vector"></span>
+                  <p>Wi-Fi</p>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <span class="express-vector"></span>
+                  <p>Экспресс</p>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="price-filter">
+              <h2 class="price-filter-title">Cтоимость</h2>
+              <span class="start-cost-title">От</span>
+              <span class="max-cost-title">До</span>
+              <div class="circle-container">
+                <div class="circle-1" draggable="true" style="left: 0px;"></div>
+                <div class="line-gray "></div>
+                <div class="line-colored" style="left: 12px; right: 135px;"></div>
+                <div class="circle-2" draggable="true" style="left: 147px;"></div>
+              </div>
+              <div class="cost-container">
+                <div class="start-cost" style="left: 0px;">1920</div>
+                <div class="limit-cost" style="left: 103px;">4500</div>
+                <div class="max-cost">7000</div>
+              </div>
+            </div>
+            <div class="time-filter">
+              <div class="departure_time-filters_container">
+                <div class="time-filter_title-container">
+                  <h2 class="time-filter-main_title"><span class="departure-vector"></span>Туда</span></h2>
+                  <span class="closeUP-vector"></span>
+                </div>
+                <div class="departure-time">
+                  <h3 class="time-filter-title">Время отбытия</h3>
+                  <div class="circle-container time-container">
+                    <div class="time-circle-1" draggable="true" style="left: 0px;"></div>
+                    <div class="timeline-gray "></div>
+                    <div class="timeline-colored" style="left: 2px; right: 128px;"></div>
+                    <div class="time-circle-2" draggable="true" style="left: 155px;"></div>
+                  </div>
+                  <div class="cost-container time-container">
+                    <div class="start-cost" style="left: 0px;">0:00</div>
+                    <div class="limit-cost" style="left: 103px;">11:00</div>
+                    <div class="max-cost">24:00</div>
+                  </div>
+                </div>
+                <div class="arrival-time">
+                  <h3 class="time-filter-title arrival-title">Время прибытия</h3>
+                  <div class="circle-container time-container">
+                    <div class="time-circle-1" draggable="true" style="left: 50px;"></div>
+                    <div class="timeline-gray"></div>
+                    <div class="timeline-colored" style="left: 52px; right: 136px;"></div>
+                    <div class="time-circle-2" draggable="true" style="left: 155px;"></div>
+                  </div>
+                  <div class="cost-container time-container">
+                    <div class="start-cost" style="left: 50px;">5:00</div>
+                    <div class="limit-cost" style="left: 103px;">11:00</div>
+                    <div class="max-cost">24:00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="departure-back_time-filters_container">
+                <div class="time-filter_title-container">
+                  <h2 class="time-filter-main_title"><span class="arrival-vector"></span>Обратно</h2>
+                  <span class="closeUP-vector"></span>
+                </div>
+                <div class="departure-time">
+                  <h3 class="time-filter-title">Время отбытия</h3>
+                  <div class="circle-container time-container">
+                    <div class="time-circle-1" draggable="true" style="left: 0px;"></div>
+                    <div class="timeline-gray"></div>
+                    <div class="timeline-colored" style="left: 2px; right: 128px;"></div>
+                    <div class="time-circle-2" draggable="true" style="left: 155px;"></div>
+                  </div>
+                  <div class="cost-container time-container">
+                    <div class="start-cost" style="left: 0px;">0:00</div>
+                    <div class="limit-cost" style="left: 103px;">11:00</div>
+                    <div class="max-cost">24:00</div>
+                  </div>
+                </div>
+                <div class="arrival-time">
+                  <h3 class="time-filter-title arrival-title">Время прибытия</h3>
+                  <div class="circle-container time-container">
+                    <div class="time-circle-1" draggable="true" style="left: 50px;"></div>
+                    <div class="timeline-gray"></div>
+                    <div class="timeline-colored" style="left: 52px; right: 136px;"></div>
+                    <div class="time-circle-2" draggable="true" style="left: 155px;"></div>
+                  </div>
+                  <div class="cost-container time-container">
+                    <div class="start-cost" style="left: 50px;">5:00</div>
+                    <div class="limit-cost" style="left: 103px;">11:00</div>
+                    <div class="max-cost">24:00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="overlooked-tickets">
+          <h2>Последние билеты</h2>
+          <ul>
+            <li class="overlooked-ticket">
+              <div class="departure-point"><span class="point-name">Санкт-Петербург</span><span class="point-station">
+                  Курский
+                  вокзал</span></div>
+              <div class="arrival-point"><span class="point-name">Самара</span><span class="point-station">Московский
+                  вокзал</span></div>
+              <div class="train-comfort-props"><span class="comfort-props_vector"></span></div>
+              <div class="overlooked-ticket-price">oт <span class="ticket-price">6800</span><span class="rub-vector"></span></div>
+            </li>
+
+            <li class="overlooked-ticket">
+              <div class="departure-point"><span class="point-name">Москва</span><span class="point-station">
+                  Курский
+                  вокзал</span></div>
+              <div class="arrival-point"><span class="point-name">Казань</span><span class="point-station">Московский
+                  вокзал</span></div>
+              <div class="train-comfort-props"><span class="comfort-props_vector"></span></div>
+              <div class="overlooked-ticket-price">oт <span class="ticket-price">3500</span><span class="rub-vector"></span></div>
+            </li>
+
+            <li class="overlooked-ticket">
+              <div class="departure-point"><span class="point-name">Казань</span><span class="point-station">
+                  Курский
+                  вокзал</span></div>
+              <div class="arrival-point"><span class="point-name">Нижний-Новгород</span><span class="point-station">Московский
+                  вокзал</span></div>
+              <div class="train-comfort-props"><span class="comfort-props_vector"></span></div>
+              <div class="overlooked-ticket-price">oт <span class="ticket-price">3500</span><span class="rub-vector"></span></div>
+            </li>
+          </ul>
+
+        </section>
+      </section>
+      <section class="trains">
+
+        <section class="trains_head">
+          <div class="trains-list_section-title">
+            <p class="section-name">Найдено: </p><span class="trains-amount">20</span>
+          </div>
+          <div class="trains-list_sort-by">
+            <p class="sort-by">Сортировать по:</p>
+            <select class="sorting" name="">
+              <option value="">времени</option>
+              <option value="">стоимости</option>
+              <option value="">длительности</option>
+            </select>
+          </div>
+          <div class="trains-list_show-by">
+            <p class="show-by">Показывать по:</p>
+            <ul class="show-by-list">
+              <li>5</li>
+              <li>10</li>
+              <li>20</li>
+            </ul>
+          </div>
+        </section>
+        <section class="trains-list-container">
+          <ul class="trains-list">
+            <li class="train">
+              <div class="train-description-wrap">
+                <div class="train-description">
+                  <span class="train-vector"></span>
+                  <p class="train-number">116С</p>
+                  <ul class="train-route">
+                    <li>Адлер<span class="arrow-vector"></span></li>
+                    <li>Москва<span class="arrow-vector"></span></li>
+                    <li>Санкт-Петербург</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="train-travel_time-scheme-wrap">
+                <div class="train-shipment-scheme">
+                  <div class="train-departure-time-wrap">
+                    <span class="train-departure-time">0:10</span>
+                    <span class="train-departure-point">Москва</span>
+                    <span class="train-departure-station">Курский вокзал</span>
+                  </div>
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector"></span>
+                  </div>
+                  <div class="train-arrival-time">
+                    <span class="train-departure-time">9:52</span>
+                    <span class="train-departure-point">Санкт-Петербург</span>
+                    <span class="train-departure-station">Ладожский вокзал</span>
+                  </div>
+                </div>
+                <div class="train-shipment-reverse-scheme">
+                  <div class="train-departure-time-wrap">
+                    <span class="train-departure-time">0:10</span>
+                    <span class="train-departure-point">Москва</span>
+                    <span class="train-departure-station">Курский вокзал</span>
+                  </div>
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector-reverse"></span>
+                  </div>
+                  <div class="train-arrival-time">
+                    <span class="train-departure-time">9:52</span>
+                    <span class="train-departure-point">Санкт-Петербург</span>
+                    <span class="train-departure-station">Ладожский вокзал</span>
+                  </div>
+                </div>
+              </div>
+              <div class="train-place-prices">
+                <ul>
+                  <li><span class="type">Сидячий</span><span class="seats">88</span>oт <span class="place-ticket-price">1920<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Плацкарт</span> <span class="seats">52</span>oт <span class="place-ticket-price">2530<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Купе</span> <span class="seats">24</span>oт <span class="place-ticket-price">3820<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Люкс</span><span class="seats">15</span>oт <span class="place-ticket-price">4950<span
+                        class="rub-vector-small"></span></span></li>
+                </ul>
+                <div class="train-comfort-available-props"><span class="comfort-props_vector"></span></div>
+                <button class="select-seats">Выбрать места</button>
+              </div>
+            </li>
+
+            <li class="train">
+              <div class="train-description-wrap">
+                <div class="train-description">
+                  <span class="train-vector"></span>
+                  <p class="train-number">116С</p>
+                  <ul class="train-route">
+                    <li>Москва<span class="arrow-vector"></span></li>
+                    <li>Санкт-Петербург «Мегаполис»</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="train-travel_time-scheme-wrap">
+                <div class="train-shipment-scheme">
+                  <div class="train-departure-time-wrap">
+                    <span class="train-departure-time">0:20</span>
+                    <span class="train-departure-point">Москва</span>
+                    <span class="train-departure-station">Ленинградский вокзал</span>
+                  </div>
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">8:39</span>
+                    <span class="travel-time-vector"></span>
+                  </div>
+                  <div class="train-arrival-time">
+                    <span class="train-departure-time">8:59</span>
+                    <span class="train-departure-point">Санкт-Петербург</span>
+                    <span class="train-departure-station">Московский вокзал</span>
+                  </div>
+                </div>
+              </div>
+              <div class="train-place-prices">
+                <ul>
+                  <li><span class="type">Купе</span> <span class="seats">24</span>oт <span class="place-ticket-price">3820<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Люкс</span><span class="seats">15</span>oт <span class="place-ticket-price">4950<span
+                        class="rub-vector-small"></span></span></li>
+                </ul>
+                <div class="train-comfort-available-props"><span class="comfort-props_vector"></span></div>
+                <button class="select-seats">Выбрать места</button>
+              </div>
+            </li>
+            <li class="train">
+              <div class="train-description-wrap">
+                <div class="train-description">
+                  <span class="train-vector"></span>
+                  <p class="train-number">116С</p>
+                  <ul class="train-route">
+                    <li>Нижний Новгород<span class="arrow-vector"></span></li>
+                    <li>Москва<span class="arrow-vector"></span></li>
+                    <li>Санкт-Петербург «Волга»</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="train-travel_time-scheme-wrap">
+
+                <div class="train-shipment-scheme">
+                  <div class="train-departure-time-wrap">
+                    <span class="train-departure-time">0:10</span>
+                    <span class="train-departure-point">Москва</span>
+                    <span class="train-departure-station">Курский вокзал</span>
+                  </div>
+
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector"></span>
+                  </div>
+
+                  <div class="train-arrival-time">
+                    <span class="train-departure-time">9:52</span>
+                    <span class="train-departure-point">Санкт-Петербург</span>
+                    <span class="train-departure-station">Ладожский вокзал</span>
+                  </div>
+                </div>
+
+                <div class="train-shipment-reverse-scheme">
+                  <div class="train-departure-time-wrap">
+                    <span class="train-departure-time">0:10</span>
+                    <span class="train-departure-point">Москва</span>
+                    <span class="train-departure-station">Курский вокзал</span>
+                  </div>
+
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector-reverse"></span>
+                  </div>
+
+                  <div class="train-arrival-time">
+                    <span class="train-departure-time">9:52</span>
+                    <span class="train-departure-point">Санкт-Петербург</span>
+                    <span class="train-departure-station">Ладожский вокзал</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="train-place-prices">
+                <ul>
+                  <li><span class="type">Плацкарт</span> <span class="seats">52</span>oт <span class="place-ticket-price">2530<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Купе</span> <span class="seats">24</span>oт <span class="place-ticket-price">3820<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Люкс</span><span class="seats">15</span>oт <span class="place-ticket-price">4950<span
+                        class="rub-vector-small"></span></span></li>
+                </ul>
+                <div class="train-comfort-available-props"><span class="comfort-props_vector"></span></div>
+                <button class="select-seats">Выбрать места</button>
+              </div>
+
+            </li>
+            <li class="train">
+              <div class="train-description-wrap">
+                <div class="train-description">
+                  <span class="train-vector"></span>
+                  <p class="train-number">116С</p>
+                  <ul class="train-route">
+                    <li>Адлер<span class="arrow-vector"></span></li>
+                    <li>Москва<span class="arrow-vector"></span></li>
+                    <li>Санкт-Петербург</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="train-travel_time-scheme-wrap">
+
+                <div class="train-shipment-scheme">
+                  <div class="train-departure-time-wrap">
+                    <span class="train-departure-time">0:10</span>
+                    <span class="train-departure-point">Москва</span>
+                    <span class="train-departure-station">Курский вокзал</span>
+                  </div>
+
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector"></span>
+                  </div>
+
+                  <div class="train-arrival-time">
+                    <span class="train-departure-time">9:52</span>
+                    <span class="train-departure-point">Санкт-Петербург</span>
+                    <span class="train-departure-station">Ладожский вокзал</span>
+                  </div>
+                </div>
+
+                <div class="train-shipment-reverse-scheme">
+                  <div class="train-departure-time-wrap">
+                    <span class="train-departure-time">0:10</span>
+                    <span class="train-departure-point">Москва</span>
+                    <span class="train-departure-station">Курский вокзал</span>
+                  </div>
+
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector-reverse"></span>
+                  </div>
+
+                  <div class="train-arrival-time">
+                    <span class="train-departure-time">9:52</span>
+                    <span class="train-departure-point">Санкт-Петербург</span>
+                    <span class="train-departure-station">Ладожский вокзал</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="train-place-prices">
+                <ul>
+                  <li><span class="type">Сидячий</span><span class="seats">88</span>oт <span class="place-ticket-price">1920<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Плацкарт</span> <span class="seats">52</span>oт <span class="place-ticket-price">2530<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Купе</span> <span class="seats">24</span>oт <span class="place-ticket-price">3820<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Люкс</span><span class="seats">15</span>oт <span class="place-ticket-price">4950<span
+                        class="rub-vector-small"></span></span></li>
+                </ul>
+                <div class="train-comfort-available-props"><span class="comfort-props_vector"></span></div>
+                <button class="select-seats">Выбрать места</button>
+              </div>
+
+            </li>
+            <li class="train">
+              <div class="train-description-wrap">
+                <div class="train-description">
+                  <span class="train-vector"></span>
+                  <p class="train-number">116С</p>
+                  <ul class="train-route">
+                    <li>Адлер<span class="arrow-vector"></span></li>
+                    <li>Москва<span class="arrow-vector"></span></li>
+                    <li>Санкт-Петербург</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="train-travel_time-scheme-wrap">
+
+                <div class="train-shipment-scheme">
+                  <div class="train-departure-time-wrap">
+                    <span class="train-departure-time">0:10</span>
+                    <span class="train-departure-point">Москва</span>
+                    <span class="train-departure-station">Курский вокзал</span>
+                  </div>
+
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector"></span>
+                  </div>
+
+                  <div class="train-arrival-time">
+                    <span class="train-departure-time">9:52</span>
+                    <span class="train-departure-point">Санкт-Петербург</span>
+                    <span class="train-departure-station">Ладожский вокзал</span>
+                  </div>
+                </div>
+
+                <div class="train-shipment-reverse-scheme">
+                  <div class="train-departure-time-wrap">
+                    <span class="train-departure-time">0:10</span>
+                    <span class="train-departure-point">Москва</span>
+                    <span class="train-departure-station">Курский вокзал</span>
+                  </div>
+
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector-reverse"></span>
+                  </div>
+
+                  <div class="train-arrival-time">
+                    <span class="train-departure-time">9:52</span>
+                    <span class="train-departure-point">Санкт-Петербург</span>
+                    <span class="train-departure-station">Ладожский вокзал</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="train-place-prices">
+                <ul>
+                  <li><span class="type">Сидячий</span><span class="seats">88</span>oт <span class="place-ticket-price">1920<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Плацкарт</span> <span class="seats">52</span>oт <span class="place-ticket-price">2530<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Купе</span> <span class="seats">24</span>oт <span class="place-ticket-price">3820<span
+                        class="rub-vector-small"></span></span></li>
+                  <li><span class="type">Люкс</span><span class="seats">15</span>oт <span class="place-ticket-price">4950<span
+                        class="rub-vector-small"></span></span></li>
+                </ul>
+                <div class="train-comfort-available-props"><span class="comfort-props_vector"></span></div>
+                <button class="select-seats">Выбрать места</button>
+              </div>
+        </section>
+        <section class="pagination-container">
+          <button class="angle-back"></button>
+          <ul class='pagination-list'>
+            <li class="active-page">1</li>
+            <li class="page">2</li>
+            <li class="page">3</li>
+          </ul>
+          <button class="angle-forward"></button>
+        </section>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="footer-wrap_contacts">
+          <h2 class="footer-wrap_contacts-title">Свяжитесь с нами</h2>
+          <ul class="footer-wrap_contacts-list">
+            <li class="contacts-list-phone">
+              <div class="phone-vector"></div>8 (800) 000 00 00
+            </li>
+            <li class="contacts-list-mail">
+              <div class="mail-vector"></div>inbox@mail.ru
+            </li>
+            <li class="contacts-list-skype">
+              <div class="skype-vector"></div>tu.train.tickets
+            </li>
+            <li class="contacts-list-adress">
+              <div class="adress-vector"></div>г. Москва<br> ул. Московская 27-35 555 555
+            </li>
+          </ul>
+        </div>
+        <div class="footer-wrap_subscribe">
+          <h2 class="footer-wrap_subscribe-form-title">Подписка</h2>
+          <form class="footer-wrap_subscribe-form">
+            <h3 class="footer-wrap_subscribe-form-title">Будьте в курсе событий</h3>
+            <div class="subscribe-form-input-container">
+              <input class="subscribe_email" type="email" name="email" placeholder="e-mail" />
+              <input class="subscribe_submit" type="submit" value="ОТПРАВИТЬ" />
+            </div>
+          </form>
+          <div class="footer-wrap_subscribe-social">
+            <h3 class="footer-wrap_subscribe-social-title">Подписывайтесь на нас</h3>
+            <ul class="footer-wrap_subscribe-social-list">
+              <li>
+                <div class="youtube-vector"></div>
+              </li>
+              <li>
+                <div class="linkedIn-vector"></div>
+              </li>
+              <li>
+                <div class="google-vector"></div>
+              </li>
+              <li>
+                <div class="facebook-vector"></div>
+              </li>
+              <li>
+                <div class="twitter-vector"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-end">
+        <a class="footer-end_logo" href="#">Лого</a>
+        <div class="pageUp-vector"></div>
+        <p>2018WEB</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+.main-container {
+  display: flex;
+}
+
+.travel-details {
+  width: 360px;
+  background: #3e3c41;
+}
+
+.travel-details-title,
+.travel-details-date,
+.travel-details h2,
+.sidebar-train-number-title,
+.sidebar-train-number,
+.sidebar-train-name,
+.sidebar-train-name-title,
+.sidebar-train-departure-time,
+.travel-details_departure-date,
+.travel-details_arrival-date,
+.passengers-count-container p,
+.total p,
+.passenger-data-title,
+.age-type-option,
+.passenger-age-type-selector,
+.passenger-name-selector-container input,
+.passenger-name-selector-container h3,
+.switch-field label,
+.switch-title,
+.birthday-title,
+.low-mobility-checkbox-container,
+.document-type_title,
+.next-passenger_button,
+.passenger-add-title {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.travel-details-title {
+  justify-content: center;
+  height: 100px;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+}
+
+.travel-details h2 {
+  font-size: 30px;
+  color: #ffffff;
+  padding-left: 24px;
+}
+
+.travel-details-departure,
+.travel-details-departure_back {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 40px;
+}
+
+.travel-details_title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel-details-main_title {
+  padding: 25px 0 10px 30px;
+  margin: 0;
+}
+
+.travel-details-date {
+  font-size: 18px;
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.sidebar-train-number,
+.sidebar-train-name {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: right;
+  color: #ffffff;
+  padding: 28px 28px 0 0;
+}
+
+.sidebar-train-name-list {
+  list-style: none;
+  margin: 0;
+  font-size: 16px;
+}
+
+.sidebar-train-number-title,
+.sidebar-train-name-title {
+  font-size: 18px;
+  color: #e5e5e5;
+  padding-left: 28px;
+}
+
+.sidebar-train-departure-time {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.travel-details_departure-day,
+.travel-details_arrival-day {
+  font-size: 18px;
+  color: #928f94;
+}
+
+.sidebar-train-departure-point {
+  color: #ffffff;
+}
+
+.sidebar-train-departure-station {
+  color: #928f94;
+}
+
+.sidebar-train-shipment-scheme {
+  flex-direction: column;
+  padding: 0;
+}
+
+.sidebar-train-time-wrap,
+.sidebar-train-departure-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 25px 0 25px;
+}
+
+.travel-time-wrap {
+  padding: 0;
+}
+
+.sidebar-train-shipment-scheme_departure-date,
+.sidebar-train-shipment-scheme_arrival-date,
+.departure-point-wrap,
+.arrival-point-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-train-shipment-scheme_departure-date,
+.sidebar-train-shipment-scheme_arrival-date {
+  padding-top: 25px;
+}
+
+.sidebar-train-departure-point,
+.sidebar-train-departure-station {
+  display: flex;
+}
+
+.arrival-point-wrap .sidebar-train-departure-point,
+.arrival-point-wrap .sidebar-train-departure-station,
+.sidebar-train-shipment-scheme_arrival-date .sidebar-train-departure-time {
+  justify-content: flex-end;
+}
+
+.passenger-vector {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  background: url(../Pictures/icons/css_sprites.png) -20px -680px;
+  margin: 0 9px 0 0;
+}
+
+.passengers-count-container p {
+  font-size: 18px;
+  color: #e5e5e5;
+  margin: 22px 0;
+}
+
+.count-list-wrap {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 22px;
+}
+
+.passengers-price-total {
+  margin-right: 25px;
+}
+
+.passengers-count-total {
+  margin-left: 25px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 50px 0;
+}
+
+.total p {
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.passenger-data_main-container {
+  margin: 100px 0 100px 84px;
+}
+
+.passenger-data {
+  width: 960px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}
+
+.passenger-data-form {
+  height: 687px;
+  padding: 37px 0 0 0;
+}
+
+.passenger-data-header {
+  display: flex;
+  width: 958px;
+  height: 107px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #928f94;
+}
+
+.data-skip-vector {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  background: url(../Pictures/icons/css_sprites.png) -709px -168px;
+  margin: 35px 35px 0 35px;
+}
+
+.data-skip-vector-active {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  background: url(../Pictures/icons/css_sprites.png) -709px -96px;
+  margin: 35px 35px 0 35px;
+}
+
+.data-delete-vector {
+  display: flex;
+  width: 12px;
+  height: 12px;
+  background: url(../Pictures/icons/x-vector.png);
+  margin: 45px 0 0 620px;
+}
+
+.data-add-vector {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background: url(../Pictures/icons/css_sprites.png) -330px -680px;
+  margin: 45px 0 0 500px;
+}
+
+.passenger-data-title,
+.passenger-add-title {
+  width: 182px;
+  height: 37px;
+  font-size: 30px;
+  color: #292929;
+  margin: 35px 0 0 0;
+}
+
+.passenger-add-title {
+  width: 382px;
+  margin: 35px 0 0 25px;
+}
+
+.passenger-age-type-selector {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #928f94;
+  border-radius: 5px;
+  font-size: 24px;
+  margin-left: 35px;
+}
+
+.age-type-option {
+  font-size: 24px;
+}
+
+.passenger-name-selector-container,
+.passenger-birthdayAndGender-selector-container {
+  padding-top: 37px;
+  display: flex;
+  margin-left: 35px;
+}
+
+.passenger-name-selector-container input,
+.passenger-document-selector-container input,
+.passenger-document-type-selector {
+  width: 280px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #928f94;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #292929;
+  margin-right: 25px;
+  padding-left: 15px;
+}
+
+.passenger-document-type-selector {
+  width: auto;
+}
+
+.passenger-name-selector-container h3,
+.passenger-birthdayAndGender-selector-container h3,
+.document-type_title {
+  font-size: 16px;
+  color: #928f94;
+  margin: 10px 0;
+}
+
+.gender-wrap {
+  display: flex;
+}
+
+.switch-field input {
+  display: none;
+}
+
+.switch-field label {
+  justify-content: center;
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  width: 102px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #928f94;
+  box-sizing: border-box;
+}
+
+.switch-field label:hover {
+  cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background: #ffa800;
+  border: 1px solid #928f94;
+  box-sizing: border-box;
+}
+
+.switch-field label:first-of-type {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.switch-field label:last-of-type {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.birthday-field {
+  margin-left: 35px;
+}
+
+.birthday-date {
+  width: 240px;
+  height: 50px;
+  border: 1px solid #928f94;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.low-mobility-checkbox-container {
+  font-size: 18px;
+  color: #292929;
+  border-bottom: 1px solid #928f94;
+  padding: 37px 0 32px 35px;
+}
+
+.low-mobility-checkbox-container p {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.low-mobility-checkbox {
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
+  border: 1px solid #928f94;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.passenger-document-selector-container {
+  display: flex;
+  border-bottom: 1px solid #928f94;
+  padding: 37px 0 32px 35px;
+}
+
+.next-passenger_button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 127px;
+}
+
+.noErrors {
+  justify-content: space-between;
+  background-color: #b2f6a1;
+}
+
+.noErrors-vector {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  background: url(../Pictures/icons/noErrors.png);
+  margin: 0 0 0 35px;
+}
+
+.warning {
+  justify-content: flex-start;
+  background-color: rgba(255, 61, 0, 0.38);
+}
+
+.warning_text-block {
+  padding-left: 35px;
+}
+
+.warning_text-block p {
+  margin: 0;
+}
+
+.error-vector {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  background: url(../Pictures/icons/error.png);
+  margin: 0 0 0 35px;
+}
+
+.next-passenger_button {
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #292929;
+  width: 303px;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid #292929;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0 37px 0 0;
+}
+
+.next-passenger_button:hover {
+  color: #ffa800;
+}
+
+.next-passenger_button:active {
+  color: #292929;
+  background: #ffa800;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.next-button {
+  display: flex;
+  width: 222px;
+  height: 60px;
+  background: #ffa800;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 68px;
+  margin: 50px 0px 25px auto;
+}

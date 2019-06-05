@@ -1,0 +1,226 @@
+.trainSelect_header {
+  background-image: url(../Pictures/OrderEnd_header-background.png);
+  background-position: 0 82%;
+}
+
+.order-end_main-container {
+  background: #e5e5e5;
+}
+
+.order-end_content-wrap {
+  position: relative;
+  left: 258px;
+  top: -300px;
+  width: 1404px;
+}
+
+.order-end_content-wrap h1,
+.order-end_order-number,
+.order-end_total-price,
+.order-end_total-price-sum,
+.faq-vector-container h3,
+.message-client_name,
+.message-main_text,
+.message-end_of_message,
+.assessment_title,
+.back-to-main {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.order-end_content-wrap h1 {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 84px;
+  color: #ffffff;
+  height: 117px;
+  margin: 0;
+}
+
+.order-end_content {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.order-end_title {
+  display: flex;
+  height: 148px;
+  justify-content: space-between;
+}
+
+.order-end_total-price-wrap {
+  display: flex;
+  margin: auto 82px;
+  align-items: baseline;
+}
+
+.order-end_order-number {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin: auto 82px;
+}
+
+.order-end_total-price {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #928f94;
+  margin-right: 14px;
+}
+
+.order-end_total-price-sum {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.order-end_faq {
+  height: 312px;
+  background: #f4f3f6;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 325px;
+}
+
+.faq-vector-container {
+  margin: auto 0;
+}
+
+.faq-vector-container h3 {
+  width: 226px;
+  height: 72px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #292929;
+}
+
+.faq-vector {
+  display: flex;
+  width: 155px;
+  height: 155px;
+  margin-left: 30px;
+}
+
+.first {
+  background: url(../Pictures/icons/css_sprites.png) -222px -222px;
+}
+
+.second {
+  background: url(../Pictures/icons/css_sprites.png) -424px -215px;
+}
+
+.last {
+  background: url(../Pictures/icons/css_sprites.png) -424px -20px;
+}
+
+.order-end_message {
+  display: flex;
+  flex-direction: column;
+  min-height: 450px;
+  padding: 95px 205px 0 205px;
+}
+
+.message-client_name {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #292929;
+}
+
+.message-main_text {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #292929;
+  margin-top: 50px;
+}
+
+.message-end_of_message {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #292929;
+  margin-top: 35px;
+}
+
+.order-end_assessment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 161px;
+  background: rgba(255, 168, 0, 0.88);
+}
+
+.assessment_title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #292929;
+}
+
+.assessment_list-wrap {
+  display: flex;
+  align-items: center;
+  margin-left: 83px;
+}
+
+.assessment_list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.star-vector {
+  display: flex;
+  width: 46px;
+  height: 44px;
+  margin-left: 30px;
+  background: url(../Pictures/icons/css_sprites.png) -619px -290px;
+}
+
+.star-vector:hover {
+  background: url(../Pictures/icons/css_sprites.png) -254px -424px;
+}
+
+.star-vector .active {
+  background: url(../Pictures/icons/css_sprites.png) -254px -424px;
+}
+
+.star-vector .inactive {
+  background: url(../Pictures/icons/css_sprites.png) -351px -424px;
+}
+
+.back-to-main {
+  width: 323px;
+  height: 60px;
+  border: 1px solid #3e3c41;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #292929;
+  background: rgba(255, 168, 0, 0.88);
+  margin-right: 89px;
+}
+
+.back-to-main:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.back-to-main:active {
+  border: 1px solid #ffa800;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  color: #ffa800;
+  background: #e5e5e5;
+}

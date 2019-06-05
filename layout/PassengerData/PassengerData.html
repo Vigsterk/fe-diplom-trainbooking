@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Вся жизнь - путешествие!</title>
+    <link rel="stylesheet" href="../MainPage/MainPage.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../PassengerData/PassengerData.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="trainSelect_header">
+        <div class="top-menu">
+          <div class="top-menu_wrapper">
+            <a class="top-menu_logo" href="#">Лого</a>
+            <!--<img src="#" alt="logo">-->
+            <ul class="top-menu_nav-items">
+              <!-- BrowserRouter навигация -->
+              <li class="top-menu_nav-item">
+                <a href="#">О нас</a>
+              </li>
+              <li class="top-menu_nav-item">
+                <a href="#">Как это работает</a>
+              </li>
+              <li class="top-menu_nav-item">
+                <a href="#">Отзывы</a>
+              </li>
+              <li class="top-menu_nav-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="trainSelect_header-content">
+          <div class="trainSelect_header-content_search-form-container">
+            <form class="trainSelect_header-content_search-form">
+              <div class="search-form_first-block">
+                <h2 class="form_title">Направление</h2>
+                <input
+                  class="search-form_input from_search"
+                  placeholder="Откуда"
+                />
+                <button class="reverse-points"></button>
+                <input
+                  class="search-form_input where_search"
+                  placeholder="Куда"
+                />
+              </div>
+              <div class="search-form_second-block">
+                <h2 class="form_title">Дата</h2>
+                <input
+                  type="date"
+                  class="search-form_input departure-date"
+                  placeholder="ДД/ММ/ГГ"
+                />
+                <input
+                  type="date"
+                  class="search-form_input departure-date-back"
+                  placeholder="ДД/ММ/ГГ"
+                />
+              </div>
+            </form>
+            <button class="find-tickets">Найти билеты</button>
+          </div>
+        </div>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumb breadcrumb-active">
+              <a href="#"><span class="icon">1</span>Билеты</a>
+            </li>
+            <li class="breadcrumb breadcrumb-active">
+              <a href="#"><span class="icon">2</span>Пассажиры</a>
+            </li>
+            <li class="breadcrumb">
+              <a href="#"><span class="icon">3</span>Оплата</a>
+            </li>
+            <li class="breadcrumb">
+              <a href="#"><span class="icon">4</span>Проверка</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="main-container">
+        <section class="sidebar-content">
+          <section class="travel-details">
+            <h2 class="travel-details-title">Детали поездки</h2>
+            <div class="travel-details-departure">
+              <div class="travel-details_title-container">
+                <h2 class="travel-details-main_title">
+                  <span class="departure-vector"></span>Туда<span
+                    class="travel-details-date"
+                    >30.08.2018</span
+                  >
+                </h2>
+                <span class="closeUP-vector"></span>
+              </div>
+              <p class="sidebar-train-number">
+                <span class="sidebar-train-number-title">№ Поезда</span>116C
+              </p>
+              <div class="sidebar-train-name">
+                <span class="sidebar-train-name-title">Название</span>
+                <ul class="sidebar-train-name-list">
+                  <li>Адлер</li>
+                  <li>Санкт-Петербург</li>
+                </ul>
+              </div>
+              <div class="sidebar-train-shipment-scheme">
+                <div class="sidebar-train-time-wrap">
+                  <div class="sidebar-train-shipment-scheme_departure-date">
+                    <span class="sidebar-train-departure-time">0:10</span>
+                    <span class="travel-details_departure-day">30.08.2018</span>
+                  </div>
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector"></span>
+                  </div>
+                  <div class="sidebar-train-shipment-scheme_arrival-date">
+                    <span class="sidebar-train-departure-time">9:52</span>
+                    <span class="travel-details_arrival-day">31.08.2018</span>
+                  </div>
+                </div>
+                <div class="sidebar-train-departure-wrap">
+                  <div class="sidebar-departure-point-wrap">
+                    <span class="sidebar-train-departure-point">Москва</span>
+                    <span class="sidebar-train-departure-station"
+                      >Курский вокзал</span
+                    >
+                  </div>
+                  <div class="arrival-point-wrap">
+                    <span class="sidebar-train-departure-point"
+                      >Санкт-Петербург</span
+                    >
+                    <span class="sidebar-train-departure-station"
+                      >Ладожский вокзал</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="travel-details-departure_back">
+              <div class="travel-details_title-container">
+                <h2 class="travel-details-main_title">
+                  <span class="departure-vector"></span>Обратно<span
+                    class="travel-details-date"
+                    >09.09.2018</span
+                  >
+                </h2>
+                <span class="closeUP-vector"></span>
+              </div>
+              <p class="sidebar-train-number">
+                <span class="sidebar-train-number-title">№ Поезда</span>116C
+              </p>
+              <div class="sidebar-train-name">
+                <span class="sidebar-train-name-title">Название</span>
+                <ul class="sidebar-train-name-list">
+                  <li>Адлер</li>
+                  <li>Санкт-Петербург</li>
+                </ul>
+              </div>
+              <div class="sidebar-train-shipment-scheme">
+                <div class="sidebar-train-time-wrap">
+                  <div class="sidebar-train-shipment-scheme_departure-date">
+                    <span class="sidebar-train-departure-time">0:10</span>
+                    <span class="travel-details_departure-day">09.09.2018</span>
+                  </div>
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector-reverse"></span>
+                  </div>
+                  <div class="sidebar-train-shipment-scheme_arrival-date">
+                    <span class="sidebar-train-departure-time">9:52</span>
+                    <span class="travel-details_arrival-day">08.09.2018</span>
+                  </div>
+                </div>
+                <div class="sidebar-train-departure-wrap">
+                  <div class="departure-point-wrap">
+                    <span class="sidebar-train-departure-point">Москва</span>
+                    <span class="sidebar-train-departure-station"
+                      >Курский вокзал</span
+                    >
+                  </div>
+                  <div class="arrival-point-wrap">
+                    <span class="sidebar-train-departure-point"
+                      >Санкт-Петербург</span
+                    >
+                    <span class="sidebar-train-departure-station"
+                      >Ладожский вокзал</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="passengers-count-container">
+              <div class="travel-details_title-container">
+                <h2 class="travel-details-main_title">
+                  <span class="passenger-vector"></span>Пассажиры
+                </h2>
+                <span class="closeUP-vector"></span>
+              </div>
+              <div class="count-list-wrap">
+                <div class="passengers-count-total">
+                  <p>2 Взрослых</p>
+                  <p>1 Ребенок</p>
+                </div>
+                <div class="passengers-price-total">
+                  <p>5840<span class="rub-vector-small"></span></p>
+                  <p>1920<span class="rub-vector-small"></span></p>
+                </div>
+              </div>
+              <div class="total">
+                <p>Итог</p>
+                <span class="total-price"
+                  >7760<span class="rub-vector"></span
+                ></span>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="passenger-data_main-container">
+          <section class="passenger-data">
+            <div class="passenger-data-header">
+              <span class="data-skip-vector"></span>
+              <h2 class="passenger-data-title">Пассажир-1</h2>
+              <span class="data-delete-vector"></span>
+            </div>
+            <div class="passenger-data-form">
+              <select class="passenger-age-type-selector">
+                <option class="age-type-option" value="">Взрослый</option>
+                <option class="age-type-option" value="">Детский</option>
+              </select>
+              <div class="passenger-name-selector-container">
+                <div class="last-name-container">
+                  <h3 class="last-name_title">Фамилия</h3>
+                  <input type="text" />
+                </div>
+                <div class="first-name-container">
+                  <h3 class="first-name_title">Имя</h3>
+                  <input type="text" />
+                </div>
+                <div class="middle-name-container">
+                  <h3 class="middle-name_title">Отчество</h3>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="passenger-birthdayAndGender-selector-container">
+                <div class="switch-field">
+                  <h3 class="switch-title">Пол</h3>
+                  <div class="gender-wrap">
+                    <input
+                      type="radio"
+                      id="switch_left"
+                      name="switch_2"
+                      value="male"
+                      checked
+                    />
+                    <label for="switch_left">М</label>
+                    <input
+                      type="radio"
+                      id="switch_right"
+                      name="switch_2"
+                      value="female"
+                    />
+                    <label for="switch_right">Ж</label>
+                  </div>
+                </div>
+                <div class="birthday-field">
+                  <h3 class="birthday-title">Дата рождения</h3>
+                  <!--Воткну сюда datepicker на react https://reactdatepicker.com/-->
+                  <input type="date" class="search-form_input birthday-date" />
+                </div>
+              </div>
+              <div class="low-mobility-checkbox-container">
+                <input class="low-mobility-checkbox" type="checkbox" />
+                <p>Ограниченная подвижность</p>
+              </div>
+              <div class="passenger-document-selector-container">
+                <div class="document-type-container">
+                  <h3 class="document-type_title">Тип документа</h3>
+                  <select class="passenger-document-type-selector">
+                    <option class="document-type-option" value=""
+                      >Паспорт РФ</option
+                    >
+                    <option class="document-type-option" value=""
+                      >Загранпаспорт</option
+                    >
+                  </select>
+                </div>
+                <div class="document-serial-container">
+                  <h3 class="document-type_title">Серия</h3>
+                  <input type="text" pattern="[0-9]{4}" />
+                </div>
+                <div class="document-num-container">
+                  <h3 class="document-type_title">Номер</h3>
+                  <input type="text" pattern="[0-9]{6}" />
+                </div>
+              </div>
+              <div class="next-passenger_button-container">
+                <button class="next-passenger_button">
+                  Следующий пассажир
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="passenger-data">
+            <div class="passenger-data-header">
+              <span class="data-skip-vector"></span>
+              <h2 class="passenger-data-title">Пассажир-2</h2>
+              <span class="data-delete-vector"></span>
+            </div>
+            <div class="passenger-data-form">
+              <select class="passenger-age-type-selector">
+                <!--Тут будет активен детский-->
+                <!--<option class="age-type-option" value="">Взрослый</option>-->
+                <option class="age-type-option" value="">Детский</option>
+              </select>
+              <div class="passenger-name-selector-container">
+                <div class="last-name-container">
+                  <h3 class="last-name_title">Фамилия</h3>
+                  <input type="text" />
+                </div>
+                <div class="first-name-container">
+                  <h3 class="first-name_title">Имя</h3>
+                  <input type="text" />
+                </div>
+                <div class="middle-name-container">
+                  <h3 class="middle-name_title">Отчество</h3>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="passenger-birthdayAndGender-selector-container">
+                <div class="switch-field">
+                  <h3 class="switch-title">Пол</h3>
+                  <!-- Переключалка срабатывает на всех dom-эллементах gender-wrap, уберу условия в react-->
+                  <div class="gender-wrap">
+                    <input
+                      type="radio"
+                      id="switch_left"
+                      name="switch_2"
+                      value="male"
+                      checked
+                    />
+                    <label for="switch_left">М</label>
+                    <input
+                      type="radio"
+                      id="switch_right"
+                      name="switch_2"
+                      value="female"
+                    />
+                    <label for="switch_right">Ж</label>
+                  </div>
+                </div>
+                <div class="birthday-field">
+                  <h3 class="birthday-title">Дата рождения</h3>
+                  <!--Воткну сюда datepicker на react https://reactdatepicker.com/-->
+                  <input type="date" class="search-form_input birthday-date" />
+                </div>
+              </div>
+              <div class="low-mobility-checkbox-container">
+                <input class="low-mobility-checkbox" type="checkbox" />
+                <p>Ограниченная подвижность</p>
+              </div>
+              <div class="passenger-document-selector-container">
+                <div class="document-type-container">
+                  <h3 class="document-type_title">Тип документа</h3>
+                  <select class="passenger-document-type-selector">
+                    <option class="document-type-option" value=""
+                      >Свидетельство о рождении</option
+                    >
+                    <!--
+                      При клике на *Детский* будут убраны
+                    <option class="document-type-option" value="">Паспорт РФ</option>
+                    <option class="document-type-option" value="">Загранпаспорт</option>
+                    -->
+                  </select>
+                </div>
+                <!--
+                <div class="document-serial-container">
+                  <h3 class="document-type_title">Серия</h3>
+                  <input type='text' pattern="[0-9]{4}">
+                </div>
+                Контейнер с номером паспорта для взрослого должен иметь другой тип валидации
+                <div class="document-num-container">
+                  <h3 class="document-type_title">Номер</h3>
+                  <input type='text' pattern="[0-9]{6}">
+                </div>
+                -->
+                <div class="document-num-container">
+                  <h3 class="document-type_title">Номер</h3>
+                  <input type="text" />
+                </div>
+              </div>
+
+              <div class="next-passenger_button-container">
+                <button class="next-passenger_button">
+                  Следующий пассажир
+                </button>
+              </div>
+              <!--
+                <div class="next-passenger_button-container noErrors">
+                  <span class="noErrors-vector"></span>
+                  <button class="next-passenger_button">Следующий пассажир</button>
+                </div>
+              -->
+              <!--
+                <div class="next-passenger_button-container warning">
+                  <span class="error-vector"></span>
+                  <div class="warning_text-block">
+                    <p>Номер свидетельства о рожденни указан некорректно</p>
+                    <p>Пример: VIII-УП-123456</p>
+                  </div>
+                </div>
+              -->
+            </div>
+          </section>
+
+          <section class="passenger-data">
+            <div class="passenger-data-header">
+              <span class="data-skip-vector-active"></span>
+              <h2 class="passenger-data-title">Пассажир-3</h2>
+              <!--
+                Условие, только если доступны данные пассажира. 
+                <span class="data-delete-vector"></span>
+              -->
+            </div>
+          </section>
+          <!--Данный блок будет доступен не всегда, при клике на него будет сделана переброска в меню выбора места в вагоне если таковые ещё есть-->
+          <section class="passenger-data">
+            <div class="passenger-data-header">
+              <h2 class="passenger-add-title">Добавить пассажира</h2>
+              <span class="data-add-vector"></span>
+            </div>
+          </section>
+          <button class="next-button">Далее</button>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-wrap">
+          <div class="footer-wrap_contacts">
+            <h2 class="footer-wrap_contacts-title">Свяжитесь с нами</h2>
+            <ul class="footer-wrap_contacts-list">
+              <li class="contacts-list-phone">
+                <div class="phone-vector"></div>
+                8 (800) 000 00 00
+              </li>
+              <li class="contacts-list-mail">
+                <div class="mail-vector"></div>
+                inbox@mail.ru
+              </li>
+              <li class="contacts-list-skype">
+                <div class="skype-vector"></div>
+                tu.train.tickets
+              </li>
+              <li class="contacts-list-adress">
+                <div class="adress-vector"></div>
+                г. Москва<br />
+                ул. Московская 27-35 555 555
+              </li>
+            </ul>
+          </div>
+          <div class="footer-wrap_subscribe">
+            <h2 class="footer-wrap_subscribe-form-title">Подписка</h2>
+            <form class="footer-wrap_subscribe-form">
+              <h3 class="footer-wrap_subscribe-form-title">
+                Будьте в курсе событий
+              </h3>
+              <div class="subscribe-form-input-container">
+                <input
+                  class="subscribe_email"
+                  type="email"
+                  name="email"
+                  placeholder="e-mail"
+                />
+                <input
+                  class="subscribe_submit"
+                  type="submit"
+                  value="ОТПРАВИТЬ"
+                />
+              </div>
+            </form>
+            <div class="footer-wrap_subscribe-social">
+              <h3 class="footer-wrap_subscribe-social-title">
+                Подписывайтесь на нас
+              </h3>
+              <ul class="footer-wrap_subscribe-social-list">
+                <li>
+                  <div class="youtube-vector"></div>
+                </li>
+                <li>
+                  <div class="linkedIn-vector"></div>
+                </li>
+                <li>
+                  <div class="google-vector"></div>
+                </li>
+                <li>
+                  <div class="facebook-vector"></div>
+                </li>
+                <li>
+                  <div class="twitter-vector"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-end">
+          <a class="footer-end_logo" href="#">Лого</a>
+          <div class="pageUp-vector"></div>
+          <p>2018WEB</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

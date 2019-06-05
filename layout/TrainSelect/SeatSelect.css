@@ -1,0 +1,765 @@
+
+.seats-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #292929;
+  margin: 0;
+  padding: 100px 0 0 85px;
+}
+
+.seats-select_departure, .seats-select_departure-back {
+  width: 959px;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin: 60px 0 30px 85px;
+}
+
+.seats-select_departure_header {
+  display: flex;
+}
+
+.seats_departure-vector {
+  display: flex;
+  width: 76px;
+  height: 60px;
+  background: url(../Pictures/icons/departure-vector.png);
+  margin: 30px 0 0 15px;
+}
+
+.change-other-train_button {
+  width: 325px;
+  height: 60px;
+  Font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #292929;
+  border: 1px solid #292929;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  margin: 30px 0 0 10px;
+}
+
+.change-other-train_button:hover {
+  border-color: #FFA800;
+  color: #FFA800;
+  box-shadow: 0px 2px 2px rgba(62, 60, 65, 0.25);
+}
+
+.seats_train-description-wrap {
+  display: flex;
+  width: 957px;
+  height: 123px;
+  background: #F7F6F6;
+  margin-top: 30px;
+}
+
+.seats_train-description {
+  display: flex;
+  padding-right: 30px;
+  border-right: 1px solid #FFFFFF;
+}
+
+.train-vector-small {
+  display: flex;
+  width: 30px; height: 30px;
+  background: url(../Pictures/icons/css_sprites.png) -709px -590px;
+  margin: 45px 0 0 30px;
+}
+
+.seats_train-number {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  color: #3E3C41;
+  margin: 0;
+}
+
+.seats_train-route {
+  list-style: none;
+  align-items: baseline;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #292929;
+  padding: 0;
+}
+
+.seats_train-route li {
+  display: flex;
+  align-items: baseline;
+}
+
+.seats_train-route-wrap {
+  padding: 15px 0 0 30px;
+}
+
+.seats_train-shipment-scheme {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 50px 25px 40px;
+  border-right: 1px solid #FFFFFF;
+}
+
+.seats_travel-time-vector {
+  display: flex;
+  margin: auto auto auto 0;
+  width: 30px; height: 20px;
+  background: url(../Pictures/icons/css_sprites.png) -152px -550px;
+}
+
+.seats_travel-time-vector-reverse {
+  display: flex;
+  margin: auto auto auto 0;
+  width: 30px; height: 20px;
+  background: url(../Pictures/icons/css_sprites.png) -222px -550px;
+}
+
+.seats_travel-time {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.clockworkOrange-vector {
+  display: flex;
+  width: 30px; height: 30px;
+  background: url(../Pictures/icons/css_sprites.png) -709px -520px;
+  padding: 0 15px 0 0;
+}
+
+.travel-time_wrap p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  color: #000000;
+  margin: 0;
+}
+
+.ticket-count-title, .wagon-type-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 30px;
+  color: #292929; 
+  margin: 0;
+  padding: 30px 0 0 30px;
+}
+
+.ticket-count-container {
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.ticket-count {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 317px;
+  height: 192px;
+  margin-top: 15px;
+}
+
+.active-count  {
+  background: #F7F6F6;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.ticket-count:hover {
+  border: 1px solid rgba(255, 168, 0, 0.79);
+  box-sizing: border-box;
+}
+
+.count-screen {
+  width: 240px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #928F94;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 11px;
+  font-size: 18px;
+  color: #292929; 
+  padding-left: 15px;
+}
+
+.seat-description {
+  width: 241px;
+  height: 80px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #928F94;
+}
+
+.wagon-types-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 16px 0 32px 0;
+}
+
+.wagon-type, .wagon-type-active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  color: #928F94;
+}
+
+.wagon-type:hover {
+  color: #FFA800;
+}
+
+.wagon-type_vector, .wagon-type_vector-active{
+display: flex;
+}
+
+.seat .wagon-type_vector {
+  width: 31px; height: 50px;
+  background: url(../Pictures/icons/css_sprites.png) -619px -374px;;
+}
+
+.platzKarte .wagon-type_vector {
+  width: 50px; height: 50px;
+  background: url(../Pictures/icons/css_sprites.png) -448px -424px;
+}
+
+.coupe .wagon-type_vector {
+  width: 50px; height: 50px;
+  background: url(../Pictures/icons/css_sprites.png) -619px -20px;
+}
+
+.luxury .wagon-type_vector {
+  width: 57px; height: 50px;
+  background: url(../Pictures/icons/css_sprites.png) -351px -424px;
+}
+
+.seat-active, .platzKarte-active, .coupe-active, .luxury-active {
+  color: #FFA800;
+}
+
+ .seat-active .wagon-type_vector-active, .seat:hover .wagon-type_vector {
+  width: 31px; height: 50px;
+  background: url(../Pictures/icons/css_sprites.png) -538px -424px;
+}
+
+ .platzKarte-active .wagon-type_vector-active, .platzKarte:hover .wagon-type_vector {
+  width: 50px; height: 50px;
+  background: url(../Pictures/icons/css_sprites.png) -619px -200px;
+}
+
+ .coupe-active .wagon-type_vector-active, .coupe:hover .wagon-type_vector {
+  width: 50px; height: 50px;
+  background: url(../Pictures/icons/css_sprites.png) -619px -110px;
+}
+
+.luxury-active .wagon-type_vector-active, .luxury:hover .wagon-type_vector {
+  width: 57px; height: 50px;
+  background: url(../Pictures/icons/css_sprites.png)  -254px -424px;
+}
+
+.wagon-numbers {
+  display: flex;
+  align-items: center;
+  width: 958px;
+  height: 37px;
+  background: rgba(255, 168, 0, 0.44);
+}
+
+.wagon-numbers-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 5px;
+}
+
+.wagon-number, .active-wagon-number, .numbers-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #2D2B2F;
+  margin: 0;
+}
+
+.numbers-title {
+  font-weight: normal;
+  font-size: 18px;
+  padding-left: 30px;
+}
+
+.active-wagon-number {
+  color: #FFFFFF;
+}
+
+.number-disclamer {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #292929;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.seat-select-form {
+  display: flex;
+}
+
+.big-wagon-num {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #FFD98F;
+  width: 190px;
+  height: 161px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #292929;
+}
+
+.big-wagon-num p {
+  margin: 0;
+}
+
+.big-num {
+  font-weight: bold;
+  font-size: 72px;
+}
+
+.wagon-description,.seats-price,.seats-position {
+  display: flex;
+}
+
+.wagon-description h3, .available-seats, .seats-position, .seats-price, .service-company-name, .facilities-vector{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+  color: #928F94;
+  margin: 0;
+}
+
+.wagon-description h3 {
+  padding-bottom: 24px;
+}
+
+.available-seats {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  padding-left: 5px;
+}
+
+.seats-positions, .seats-prices, .wagon-facilities {
+  padding: 25px 0 0 50px;
+}
+
+.seats-prices h3 {
+  display: flex;
+  align-items: center;
+  height: 29px;
+}
+
+.seats-position {
+  font-size: 24px;
+  color: #000000;
+}
+
+.seats-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  align-items: baseline;
+}
+
+.wagon-facilities h3 {
+  display: flex;
+  align-items: center;
+  height: 29px;
+}
+
+.service-company-name {
+  text-transform: uppercase;
+  color: #C4C4C4;
+  padding-left: 5px;
+}
+
+.facilities-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.facilities-vector {
+  width: 36px;
+  height: 35px;
+  border: 1px solid #292929;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.facilities-vector:hover {
+  background-color: #FFA800;
+  border-radius: 5px;
+  border: 1px solid #292929;
+}
+
+.conditioner {
+  background: url(../Pictures/icons/css_sprites.png) -80px -675px;
+}
+
+.wifi {
+  background: url(../Pictures/icons/css_sprites.png) -626px -673px;
+}
+
+.linens {
+  background: url(../Pictures/icons/css_sprites.png) -592px -543px;
+}
+
+.food {
+  background: url(../Pictures/icons/css_sprites.png) -350px -544px;
+}
+
+.facilities-vector:hover.conditioner::after,.facilities-vector:hover.wifi::after,.facilities-vector:hover.linens::after, .facilities-vector:hover.food::after {
+  display: flex;
+  position: relative;
+  top: 40px;
+  left: -48px;
+  justify-content: center;
+  align-items: center;
+  content: attr(data-title);
+  width: 130px;
+  height: 32px;
+  background: #E5E5E5;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #292929;
+  z-index: 1;
+}
+
+.conditioner-included {
+  background: url(../Pictures/icons/css_sprites.png) -140px -674px;
+}
+
+.facilities-vector:hover.conditioner-included {
+  background: url(../Pictures/icons/css_sprites.png) -80px -675px;
+  background-color: #FFA800;
+}
+
+.wifi-included {
+  background: url(../Pictures/icons/css_sprites.png) -685px -672px;
+}
+
+.facilities-vector:hover.wifi-included {
+  background: url(../Pictures/icons/css_sprites.png) -626px -673px;
+  background-color: #FFA800;
+}
+
+.linens-included {
+  background: url(../Pictures/icons/css_sprites.png) -563px -672px;
+}
+
+.facilities-vector:hover.linens-included {
+  background: url(../Pictures/icons/css_sprites.png) -592px -543px;
+  background-color: #FFA800;
+}
+
+.food-included {
+  background: url(../Pictures/icons/css_sprites.png) -409px -543px;
+}
+
+.facilities-vector:hover.food-included {
+  background: url(../Pictures/icons/css_sprites.png) -350px -544px;
+  background-color: #FFA800;
+}
+
+.included {
+  border: none;
+  background-color: #FCDC9D;
+}
+
+.conditioner-active {
+  background: url(../Pictures/icons/css_sprites.png) -614px -604px;
+}
+
+.facilities-vector:hover.conditioner-active {
+  background: url(../Pictures/icons/css_sprites.png) -80px -675px;
+  background-color: #FFA800;
+}
+
+.wifi-active {
+  background: url(../Pictures/icons/css_sprites.png) -13px -738px;
+}
+
+.facilities-vector:hover.wifi-active {
+  background: url(../Pictures/icons/css_sprites.png) -626px -673px;
+  background-color: #FFA800;
+}
+
+.linens-active {
+  background: url(../Pictures/icons/css_sprites.png) -529px -542px;
+}
+
+.facilities-vector:hover.linens-active {
+  background: url(../Pictures/icons/css_sprites.png) -592px -543px;
+  background-color: #FFA800;
+}
+
+.food-active {
+  background: url(../Pictures/icons/css_sprites.png) -469px -543px;
+}
+
+.facilities-vector:hover.food-active {
+  background: url(../Pictures/icons/css_sprites.png) -350px -544px;
+  background-color: #FFA800;
+}
+
+.active {
+  border: none;
+  background-color: #FDB935;
+  border-radius: 5px;
+}
+
+.seats-disclamer {
+  width: 199px;
+  height: 72px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #292929;
+  background: #F3F3F3;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: 18px;
+}
+
+.seats-disclamer p {
+  width: 170px;
+  height: 45px;
+  margin: 0 auto;
+  padding-top: 12px;
+}
+
+.seats-scheme {
+  display: flex;
+  flex-direction: column;
+  width: 921px;
+  height: 228px;
+  margin: 0 auto;
+}
+
+.standart {
+  background-image: url(../Pictures/wagon-schemes/standart-wagon.png);
+  background-repeat: no-repeat;
+}
+
+.seat-type {
+  background-image: url(../Pictures/wagon-schemes/seat-wagon.png);
+  background-repeat: no-repeat;
+}
+
+.seats-scheme ul {
+  list-style: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+.scheme_wagon-number {
+  position: relative;
+  left: 40px;
+  width: 34px;
+  height: 25px;
+  background-color: #000000;
+  color: #F7F6F6;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  line-height: 25px;
+}
+
+.scheme_top-seats, .scheme_bottom-seats, .scheme_side-seats, .seat-type ul {
+  display: flex;
+  position: relative;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 25px;
+  padding-left: 129px
+}
+
+.scheme_side-seats {
+  padding: 21px 0 0 130px;
+}
+
+.place_is_taken {
+  width: 16px;
+  background-color: #C4C4C4;
+  color: #F7F6F6;
+}
+
+.available-place {
+  width: 16px;
+  background-color: #E5E5E5;
+  color: #000000;
+}
+
+.available-place:hover {
+  color: #FFA800;
+}
+
+.scheme_top-seats li {
+  height: 29px;
+  width: 26px;
+  border-top: 4px solid #928f94d6;
+}
+
+.scheme_bottom-seats li {
+  height: 29px;
+  width: 26px;
+  border-bottom: 5px solid #928f94d6;
+}
+
+.scheme_top-seats li:nth-child(odd), .scheme_bottom-seats li:nth-child(odd) {
+  margin-right: 33px;
+}
+
+.scheme_top-seats li:nth-child(2n), .scheme_bottom-seats li:nth-child(2n) {
+  border-right: 4px solid #928f94d6;
+}
+
+.scheme_top-seats li:first-child, .scheme_bottom-seats li:first-child {
+  border-left: 4px solid #928f94d6;
+  margin-right: 35px;
+}
+
+.scheme_top-seats li:last-child, .scheme_bottom-seats li:last-child {
+  margin-left: 3px;
+}
+
+.next-button {
+  display: flex;
+  width: 222px;
+  height: 60px;
+  background: #FFA800;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-left: 68px;
+  margin: 50px 0px 25px auto;
+}
+
+.next-button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.next-button_lock {
+  background: #928F94;
+}
+
+.scheme_side-seats {
+  display: flex;
+}
+
+.scheme_side-seats li {
+  height: 24px;
+  width: 43px;
+  border-bottom: 5px solid #928f94d6;
+}
+
+.platzKarte-wagon .scheme_bottom-seats li {
+  height: 34px;
+  border-bottom: 0;
+}
+
+.scheme_side-seats li:first-child {
+  width: 41px;
+  border-left: 4px solid #928f94d6;
+}
+
+.scheme_side-seats li:last-child {
+  width: 41px;
+}
+
+.scheme_side-seats li:nth-child(2n) {
+  border-right: 4px solid #928f94d6;
+}
+
+.luxury-wagon .scheme_bottom-seats li {
+  height: 58px;
+  width: 26px;
+  line-height: 95px;
+  border-top: 4px solid #928f94d6;
+  border-bottom: 5px solid #928f94d6;
+}
+
+.seat-type li {
+  height: 19px;
+  width: 27px;
+  margin-left: 17px;
+  line-height: 20px;
+}
+
+.scheme_first_lane-seats {
+  padding: 7px 0 0 0;
+}
+
+.scheme_second_lane-seats{
+  padding: 3px 0 0 0;
+} 
+
+.scheme_third_lane-seats {
+  padding: 20px 0 0 0;
+}
+
+.scheme_fourth_lane-seats {
+  padding: 3px 0 0 0;
+}

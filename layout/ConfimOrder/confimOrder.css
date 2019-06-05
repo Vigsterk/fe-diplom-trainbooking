@@ -1,0 +1,170 @@
+h1,
+p,
+.confim-order-total span,
+.passenger-type,
+.config-ticket,
+.confim-order_main-container .select-seats,
+.pay-type-settings span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 30px;
+  color: #292929;
+  margin: 0;
+}
+
+.passenger-data-wrap,
+.train-wrap,
+.pay-type-wrap {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+}
+
+.confim-order_main-container {
+  margin: 100px 0 100px 84px;
+}
+
+.train {
+  border: none;
+  margin-bottom: 0;
+}
+
+.train-wrap h1,
+.passenger-data-wrap h1,
+.pay-type-wrap h1 {
+  background: #ffffff;
+  border-bottom: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  height: 95px;
+  padding: 28px 0 0 30px;
+}
+
+.train:hover {
+  border: none;
+}
+
+.passenger-data-wrap ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.passenger-data-wrap li {
+  padding: 40px 0;
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.passenger-type-wrap {
+  width: 95px;
+  margin: auto 20px;
+}
+
+.passenger-type {
+  display: flex;
+  justify-content: center;
+  padding-top: 17px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.passenger-vector-big {
+  display: flex;
+  width: 68px;
+  height: 68px;
+  background: url(../Pictures/icons/css_sprites.png) -146px -424px;
+  margin: 0 auto;
+}
+
+.passenger-description p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.passenger-description p:nth-child(n + 2) {
+  color: #928f94;
+  padding-bottom: 7px;
+}
+
+.data-wrap-main_container {
+  display: flex;
+}
+
+.data-wrap-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.confim-order-total {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.data-wrap-container:first-child {
+  display: flex;
+  flex: 2;
+  margin: 0;
+}
+
+.confim-order-total-price-sum {
+  font-weight: bold;
+  padding: 0 5px 0 35px;
+}
+
+.pay-type-settings {
+  display: flex;
+  height: 146px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.pay-type-settings span {
+  font-size: 24px;
+  line-height: 28px;
+  margin: auto 33px;
+}
+
+.config-ticket,
+.config-pay-type,
+.confim-order_main-container .select-seats {
+  margin: 25px auto;
+  font-size: 24px;
+  font-weight: bold;
+  width: 233px;
+  height: 39px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.config-pay-type {
+  margin: 85px 40px 3px 40px;
+}
+
+.config-ticket:hover,
+.config-pay-type:hover,
+.confim-order_main-container .select-seats:hover {
+  color: #ffa800;
+}
+
+.config-ticket:active,
+.config-pay-type:active,
+.confim-order_main-container .select-seats:active {
+  color: #292929;
+  background: #ffa800;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
